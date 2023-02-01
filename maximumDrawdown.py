@@ -52,7 +52,6 @@ def calculate_max_drawdown(symbol, first_date, end, df, picture=False) -> float:
                 fig.write_html(f"{current_dir}/{folder_name}/{symbol}_statistics_{first_date}-{end}_{picture}.html")
                 print(f"Image saved to {current_dir}/{folder_name}.")
 
-        print(type(Max_Daily_Drawdown.min()))
         return Max_Daily_Drawdown.min()
 
     except Exception as e:
